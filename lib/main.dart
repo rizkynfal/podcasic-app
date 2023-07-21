@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:podcasic_app/screen/home_screen/home_screen.dart';
 import 'package:podcasic_app/splash_screen_page.dart';
 import 'constant/constant.dart';
 
@@ -13,20 +14,21 @@ void main() async {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     final textTheme = Theme.of(context).textTheme;
     return MaterialApp(
-      title: 'Flutter Demo',
+      color: Colors.transparent,
+      title: 'Podcasic App',
       theme: ThemeData(
         textTheme: GoogleFonts.nunitoSansTextTheme(textTheme),
         colorScheme: ColorScheme.fromSeed(seedColor: primaryPurpleColor),
         useMaterial3: true,
       ),
       home: const SplashScreenPage(),
-      routes: const <String, WidgetBuilder>{},
+      routes: <String, WidgetBuilder>{
+        homPage: (BuildContext context) => const HomeScreen(),
+      },
     );
   }
 }
