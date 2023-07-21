@@ -1,8 +1,9 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:podcasic_app/screen/main_screen.dart';
 import 'constant/constant.dart';
-import 'package:podcasic_app/main_page/home_page.dart';
+
 
 class SplashScreenPage extends StatefulWidget {
   const SplashScreenPage({super.key});
@@ -61,7 +62,6 @@ class _SplashScreenPageState extends State<SplashScreenPage> {
   Widget onBoardPage(BuildContext context) {
     return Scaffold(
       body: Container(
-        width: 500,
         padding: const EdgeInsets.all(50),
         decoration: BoxDecoration(
             backgroundBlendMode: BlendMode.values[3],
@@ -110,7 +110,7 @@ class _SplashScreenPageState extends State<SplashScreenPage> {
                         context,
                         MaterialPageRoute(
                             builder: (BuildContext context) =>
-                                const HomePage()));
+                                const MainScreen()));
                   },
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
