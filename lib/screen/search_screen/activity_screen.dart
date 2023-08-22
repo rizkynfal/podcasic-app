@@ -20,7 +20,7 @@ class _ActivityScreenState extends State<ActivityScreen> {
         height: 200,
         width: 350,
         child: ListView.separated(
-          padding: EdgeInsets.only(bottom: 30),
+          padding: const EdgeInsets.only(bottom: 30),
             itemCount: 4,
             scrollDirection: Axis.vertical,
             shrinkWrap: true,

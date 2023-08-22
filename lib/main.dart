@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:podcasic_app/screen/home_screen/home_screen.dart';
 import 'package:podcasic_app/splash_screen_page.dart';
@@ -9,6 +10,7 @@ void main() async {
   await GoogleFonts.pendingFonts([
     GoogleFonts.nunitoSans(),
   ]);
+  await dotenv.load(fileName: '.env');
   runApp(const MyApp());
 }
 

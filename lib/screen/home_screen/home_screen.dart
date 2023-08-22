@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:podcasic_app/constant/constant.dart';
-import 'package:http/http.dart' as http;
 import 'package:podcasic_app/screen/home_screen/daily_music_screen.dart';
 import 'package:podcasic_app/screen/home_screen/favorite_artist_screen.dart';
 import 'package:podcasic_app/screen/home_screen/favorite_genre_screen.dart';
 import 'package:podcasic_app/screen/home_screen/top_artist_screen.dart';
+
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -20,6 +20,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   void initState() {
     super.initState();
+
     setState(() {
       GoogleFonts.pendingFonts([
         GoogleFonts.nunitoSans(),

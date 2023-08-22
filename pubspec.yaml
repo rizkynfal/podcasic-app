@@ -11,9 +11,14 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.2
-  http: ^1.1.0
   google_fonts: ^5.1.0
   carousel_slider: ^4.2.1
+  floating_action_wheel: ^1.0.1
+  flutter_dotenv: ^5.1.0
+  lastfm: ^0.0.5
+  xml: ^6.3.0
+  dio: ^4.0.6
+  http: ^1.1.0
 
 dev_dependencies:
   flutter_test:
@@ -23,5 +28,6 @@ dev_dependencies:
 flutter:
   assets:
     - assets/img/
+    - .env
   uses-material-design: true
 
