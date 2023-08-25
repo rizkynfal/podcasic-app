@@ -78,7 +78,7 @@ class _FavoriteArtistScreenState extends State<FavoriteArtistScreen> {
                         ),
                       ),
                       Text(
-                        '${artists?[index].name} + ${imageArtist?.length}',
+                        '${artists?[index].name}',
                         style: TextStyle(
                             color: primaryWhiteColor,
                             fontSize: 12,

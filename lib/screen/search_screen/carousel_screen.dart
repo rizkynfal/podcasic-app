@@ -121,7 +121,7 @@ class _CarouselScreenState extends State<CarouselScreen> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Text(
-                    'Nigth at NYC',
+                    'Night at NYC',
                     style: TextStyle(color: primaryPurpleColor),
                   ),
                   Text(
@@ -131,7 +131,7 @@ class _CarouselScreenState extends State<CarouselScreen> {
                 ],
               ),
               IconButton(
-                  iconSize: 40,
+                  iconSize: 34,
                   onPressed: () {},
                   icon: Icon(
                     Icons.play_arrow,
